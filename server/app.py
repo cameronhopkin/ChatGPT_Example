@@ -19,7 +19,7 @@ def generate():
 
     prompt = request.json.get("prompt")
     completions = openai.Completion.create(
-        engine="text-chatgpt",
+        engine="gpt-3.5-turbo",
         prompt=prompt,
         max_tokens=50,
         n=1,
